@@ -1,4 +1,6 @@
-import {Button, Image, StyleSheet, Text, TextInput, View} from 'react-native';
+import { Button, Image, StyleSheet, Text, View } from 'react-native';
+import { Input } from "@/shared/ui/Input";
+import { colors } from "@/shared/themes"
 
 export default function App() {
   return (
@@ -10,8 +12,8 @@ export default function App() {
           resizeMode="contain"
         />
         <View style={styles.form}>
-          <TextInput style={styles.input} />
-          <TextInput style={styles.input} />
+          <Input placeholder='Email' />
+          <Input placeholder='Password' />
           <Button title="Sign In" />
         </View>
         <Text>Reset password</Text>
@@ -23,7 +25,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#16171d',
+    backgroundColor: colors.blackBackground,
     justifyContent: 'center',
     paddingHorizontal: 55,
   },
@@ -34,9 +36,6 @@ const styles = StyleSheet.create({
   form: {
     alignSelf: 'stretch',
     gap: 16
-  },
-  input: {
-    backgroundColor: "#2e2d3d",
   },
   logo: {
     width: 220,
