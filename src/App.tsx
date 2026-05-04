@@ -13,7 +13,7 @@ export default function App() {
         />
         <View style={styles.form}>
           <Input placeholder='Email' />
-          <Input placeholder='Password' />
+          <Input isPassword placeholder='Password' />
           <Button title="Sign In" />
         </View>
         <Text>Reset password</Text>

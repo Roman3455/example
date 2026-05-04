@@ -9,5 +9,12 @@ export const useInputStyles = StyleSheet.create({
     fontSize: 16,
     lineHeight: 20, // coefficient 1.2
     backgroundColor: colors.grayForm,
+    color: colors.white,
+  },
+  icon: {
+    position: "absolute",
+    right: 0,
+    paddingHorizontal: 20,
+    paddingVertical: 18
   }
 });

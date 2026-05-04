@@ -1,4 +1,5 @@
 export const colors = {
+  white: "#FFFFFF",
   blackBackground:"#16171d",
   grayForm: "#2e2d3d",
   grayPlaceholder: "#afb2bf",

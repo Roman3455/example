@@ -1,3 +1,5 @@
 import { TextInputProps } from "react-native";
 
-export type InputProps = TextInputProps & {}
+export type InputProps = TextInputProps & {
+  isPassword?: boolean;
+}
