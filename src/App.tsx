@@ -1,6 +1,7 @@
-import { Button, Image, StyleSheet, Text, View } from 'react-native';
+import { Image, StyleSheet, Text, View } from 'react-native';
 import { Input } from "@/shared/ui/Input";
-import { colors } from "@/shared/themes"
+import { colors } from "@/shared/themes";
+import { Button } from "@/shared/ui/Button";
 
 export default function App() {
   return (
@@ -14,7 +15,7 @@ export default function App() {
         <View style={styles.form}>
           <Input placeholder='Email' />
           <Input isPassword placeholder='Password' />
-          <Button title="Sign In" />
+          <Button text="Sign In" />
         </View>
         <Text>Reset password</Text>
       </View>
