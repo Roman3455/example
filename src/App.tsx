@@ -2,10 +2,20 @@ import { Image, StyleSheet, Text, View } from 'react-native';
 import { Input } from "@/shared/ui/Input";
 import { colors } from "@/shared/themes";
 import { Button } from "@/shared/ui/Button";
+import { ErrorNotification } from "@/shared/ui/ErrorNotification";
+import { useState } from "react";
 
 export default function App() {
+  const [error, setError] = useState<string | undefined>();
+  const alert = () => {
+    setError('Wrong login or password');
+    setTimeout(() => {
+      setError(undefined);
+    }, 4000);
+  }
   return (
     <View style={styles.container}>
+      <ErrorNotification error={error}/>
       <View style={styles.content}>
         <Image
           style={styles.logo}
@@ -15,7 +25,7 @@ export default function App() {
         <View style={styles.form}>
           <Input placeholder='Email' />
           <Input isPassword placeholder='Password' />
-          <Button text="Sign In" />
+          <Button text="Sign In" onPress={alert}/>
         </View>
         <Text>Reset password</Text>
       </View>

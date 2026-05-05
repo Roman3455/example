@@ -6,5 +6,6 @@ export const colors = {
   violetDark: "#2e2d3d",
   violetPrimary: "#6c38cc",
   violetHover: "#452481",
-  violetLink: "#a97bff"
+  violetLink: "#a97bff",
+  errorRed: "#cc384e"
 } as const;

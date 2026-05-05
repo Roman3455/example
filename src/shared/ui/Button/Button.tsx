@@ -1,4 +1,4 @@
-import {Animated, GestureResponderEvent, Pressable, Text, View} from "react-native";
+import { Animated, GestureResponderEvent, Pressable, Text } from "react-native";
 import { ButtonProps } from "./Button.types";
 import { useButtonStyles } from "@/shared/ui/Button/Button.styles";
 import { colors } from "@/shared/themes";
