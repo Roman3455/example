@@ -1,14 +1,9 @@
-import { SVGIconType } from "./Icon.types";
-import Svg, { Path } from "react-native-svg";
-import { colors } from "@/shared/themes";
+import { SVGIconType } from './Icon.types';
+import Svg, { Path } from 'react-native-svg';
+import { colors } from '@/shared/themes';
 
 export function EyeOpenedIcon(props: SVGIconType) {
-  const {
-    size = 24,
-    strokeWidth = 1,
-    color = colors.grayPlaceholder,
-    ...rest
-  } = props;
+  const { size = 24, strokeWidth = 1, color = colors.grayPlaceholder, ...rest } = props;
   return (
     <Svg
       viewBox="0 0 24 24"
@@ -19,8 +14,7 @@ export function EyeOpenedIcon(props: SVGIconType) {
       clipRule="evenodd"
       strokeWidth={strokeWidth}
       stroke={color}
-      {...rest}
-    >
+      {...rest}>
       <Path
         d="M12 8.25a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5ZM9.75 12a2.25
           2.25 0 1 1 4.5 0 2.25 2.25 0 0 1-4.5 0Z"

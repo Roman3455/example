@@ -1,3 +1,3 @@
 export const variables = {
-  inputHeight: 58
+  inputHeight: 58,
 } as const;

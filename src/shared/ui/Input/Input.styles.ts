@@ -1,5 +1,5 @@
-import { StyleSheet } from "react-native";
-import { colors, variables } from "@/shared/themes";
+import { StyleSheet } from 'react-native';
+import { colors, variables } from '@/shared/themes';
 
 export const useInputStyles = StyleSheet.create({
   input: {
@@ -12,9 +12,9 @@ export const useInputStyles = StyleSheet.create({
     color: colors.white,
   },
   icon: {
-    position: "absolute",
+    position: 'absolute',
     right: 0,
     paddingHorizontal: 20,
-    paddingVertical: 18
-  }
+    paddingVertical: 18,
+  },
 });

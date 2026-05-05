@@ -1,10 +1,10 @@
-import { StyleSheet } from "react-native";
-import { colors, variables } from "@/shared/themes";
+import { StyleSheet } from 'react-native';
+import { colors, variables } from '@/shared/themes';
 
 export const useButtonStyles = StyleSheet.create({
   button: {
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
     height: variables.inputHeight,
     borderRadius: 10,
     backgroundColor: colors.violetPrimary,
@@ -12,5 +12,5 @@ export const useButtonStyles = StyleSheet.create({
   text: {
     color: colors.white,
     fontSize: 18,
-  }
+  },
 });

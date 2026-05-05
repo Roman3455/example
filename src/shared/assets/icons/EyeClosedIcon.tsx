@@ -1,14 +1,9 @@
-import { SVGIconType } from "./Icon.types";
-import Svg, { Path } from "react-native-svg";
-import { colors } from "@/shared/themes";
+import { SVGIconType } from './Icon.types';
+import Svg, { Path } from 'react-native-svg';
+import { colors } from '@/shared/themes';
 
 export function EyeClosedIcon(props: SVGIconType) {
-  const {
-    size = 24,
-    strokeWidth = 1,
-    color = colors.grayPlaceholder,
-    ...rest
-  } = props;
+  const { size = 24, strokeWidth = 1, color = colors.grayPlaceholder, ...rest } = props;
   return (
     <Svg
       viewBox="0 0 24 24"
@@ -17,8 +12,7 @@ export function EyeClosedIcon(props: SVGIconType) {
       fill="none"
       strokeWidth={strokeWidth}
       stroke={color}
-      {...rest}
-    >
+      {...rest}>
       <Path
         d="M2.69 6.705a.75.75 0 0 0-1.38.59l1.38-.59Zm12.897 6.624-.274-.698.274.698Zm-6.546.409a.75.75
           0 1 0-1.257-.818l1.257.818Zm-2.67 1.353a.75.75 0 1 0 1.258.818l-1.258-.818ZM22.69 7.295a.75.75

@@ -1,7 +1,7 @@
-import { Animated, GestureResponderEvent, Pressable, Text } from "react-native";
-import { ButtonProps } from "./Button.types";
-import { useButtonStyles } from "@/shared/ui/Button/Button.styles";
-import { colors } from "@/shared/themes";
+import { Animated, GestureResponderEvent, Pressable, Text } from 'react-native';
+import { ButtonProps } from './Button.types';
+import { useButtonStyles } from '@/shared/ui/Button/Button.styles';
+import { colors } from '@/shared/themes';
 
 export function Button(props: ButtonProps) {
   const { text, onPressIn, onPressOut, ...rest } = props;
@@ -17,7 +17,7 @@ export function Button(props: ButtonProps) {
       useNativeDriver: true,
     }).start();
     onPressIn && onPressIn(e);
-  }
+  };
   const fadeOut = (e: GestureResponderEvent) => {
     Animated.timing(animatedValue, {
       toValue: 100,
@@ -25,10 +25,10 @@ export function Button(props: ButtonProps) {
       useNativeDriver: true,
     }).start();
     onPressOut && onPressOut(e);
-  }
+  };
   return (
     <Pressable onPressIn={fadeIn} onPressOut={fadeOut} {...rest}>
-      <Animated.View style={[useButtonStyles.button, {backgroundColor: color}]}>
+      <Animated.View style={[useButtonStyles.button, { backgroundColor: color }]}>
         <Text style={useButtonStyles.text}>{text}</Text>
       </Animated.View>
     </Pressable>
