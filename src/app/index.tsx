@@ -5,7 +5,7 @@ import { Button } from '@/shared/ui/Button';
 import { ErrorNotification } from '@/shared/ui/ErrorNotification';
 import { useState } from 'react';
 
-export default function App() {
+export default function Index() {
   const [error, setError] = useState<string | undefined>();
   const alert = () => {
     setError('Wrong login or password');
@@ -19,7 +19,7 @@ export default function App() {
       <View style={styles.content}>
         <Image
           style={styles.logo}
-          source={require('../assets/images/logo.png')}
+          source={require('../../assets/images/logo.png')}
           resizeMode="contain"
         />
         <View style={styles.form}>
