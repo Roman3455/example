@@ -1,11 +1,12 @@
-import { Image, StyleSheet, Text, View } from 'react-native';
+import { Link } from 'expo-router';
+import { Image, StyleSheet, View, Text } from 'react-native';
 import { Input } from '@/shared/ui/Input';
 import { colors } from '@/shared/themes';
 import { Button } from '@/shared/ui/Button';
 import { ErrorNotification } from '@/shared/ui/ErrorNotification';
 import { useState } from 'react';
 
-export default function Index() {
+export default function Login() {
   const [error, setError] = useState<string | undefined>();
   const alert = () => {
     setError('Wrong login or password');
@@ -27,7 +28,9 @@ export default function Index() {
           <Input isPassword placeholder="Password" />
           <Button text="Sign In" onPress={alert} />
         </View>
-        <Text>Reset password</Text>
+        <Link href='/restore'>
+          <Text>Reset password</Text>
+        </Link>
       </View>
     </View>
   );
