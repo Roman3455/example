@@ -11,6 +11,7 @@ export const useButtonStyles = StyleSheet.create({
   },
   text: {
     color: colors.white,
+    fontFamily: 'FiraSansSemibold',
     fontSize: 18,
   },
 });
