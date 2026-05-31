@@ -2,8 +2,8 @@ import { Stack, SplashScreen } from 'expo-router';
 import { colors } from '@/shared/themes';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider, useSafeAreaInsets } from 'react-native-safe-area-context';
-import { useFonts } from "expo-font";
-import {useEffect} from "react";
+import { useFonts } from 'expo-font';
+import { useEffect } from 'react';
 
 /**
  * Slot
@@ -16,7 +16,7 @@ export default function RootLayout() {
   const insets = useSafeAreaInsets();
   const [loaded, error] = useFonts({
     FiraSans: require('assets/fonts/FiraSans-Regular.ttf'),
-    FiraSansSemibold: require('assets/fonts/FiraSans-SemiBold.ttf')
+    FiraSansSemibold: require('assets/fonts/FiraSans-SemiBold.ttf'),
   });
 
   useEffect(() => {
