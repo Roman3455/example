@@ -7,6 +7,7 @@ export const useInputStyles = StyleSheet.create({
     paddingHorizontal: 24,
     borderRadius: 10,
     fontSize: 16,
+    fontFamily: 'FiraSans',
     lineHeight: 20, // coefficient 1.2
     backgroundColor: colors.grayForm,
     color: colors.white,

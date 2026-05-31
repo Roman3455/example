@@ -13,5 +13,6 @@ export const useErrorNotificationStyles = StyleSheet.create({
     fontSize: 16,
     textAlign: 'center',
     color: colors.white,
+    fontFamily: 'FiraSans'
   },
 });
